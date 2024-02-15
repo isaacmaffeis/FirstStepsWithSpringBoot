@@ -1,6 +1,6 @@
-package com.isaacmaffeis.firststepswithspringboot.services.impl;
+package com.isaacmaffeis.firststepswithspringboot.services.colours.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.services.RedPrinter;
+import com.isaacmaffeis.firststepswithspringboot.services.colours.RedPrinter;
 import org.springframework.stereotype.Service;
 
 @Service

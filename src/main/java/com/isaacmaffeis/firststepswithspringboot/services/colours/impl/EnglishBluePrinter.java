@@ -1,6 +1,6 @@
-package com.isaacmaffeis.firststepswithspringboot.services.impl;
+package com.isaacmaffeis.firststepswithspringboot.services.colours.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.services.BluePrinter;
+import com.isaacmaffeis.firststepswithspringboot.services.colours.BluePrinter;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
