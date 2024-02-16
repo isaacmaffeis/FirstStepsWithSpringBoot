@@ -1,4 +1,4 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.postSQL;
+package com.isaacmaffeis.firststepswithspringboot.database.postSQL;
 
 import lombok.extern.java.Log;
 import org.springframework.boot.CommandLineRunner;

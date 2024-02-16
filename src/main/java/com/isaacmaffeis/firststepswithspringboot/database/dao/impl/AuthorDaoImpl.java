@@ -1,7 +1,7 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.dao.impl;
+package com.isaacmaffeis.firststepswithspringboot.database.dao.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.repository.dao.domain.Author;
-import com.isaacmaffeis.firststepswithspringboot.repository.dao.AuthorDao;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Author;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.AuthorDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

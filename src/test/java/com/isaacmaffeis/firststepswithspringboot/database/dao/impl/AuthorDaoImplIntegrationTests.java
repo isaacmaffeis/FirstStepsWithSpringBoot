@@ -1,7 +1,7 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.dao.impl;
+package com.isaacmaffeis.firststepswithspringboot.database.dao.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.repository.dao.domain.Author;
-import com.isaacmaffeis.firststepswithspringboot.repository.dao.TestDataUtil;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Author;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.TestDataUtil;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

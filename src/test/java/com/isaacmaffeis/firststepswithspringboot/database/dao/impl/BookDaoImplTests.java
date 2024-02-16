@@ -1,6 +1,6 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.dao.impl;
+package com.isaacmaffeis.firststepswithspringboot.database.dao.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.repository.dao.domain.Book;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Book;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

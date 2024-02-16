@@ -1,4 +1,4 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.config;
+package com.isaacmaffeis.firststepswithspringboot.database.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

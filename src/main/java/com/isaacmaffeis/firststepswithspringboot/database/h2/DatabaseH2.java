@@ -1,4 +1,4 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.h2;
+package com.isaacmaffeis.firststepswithspringboot.database.h2;
 
 import lombok.extern.java.Log;
 import org.springframework.boot.CommandLineRunner;

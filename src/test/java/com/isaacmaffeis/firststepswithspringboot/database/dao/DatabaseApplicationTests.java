@@ -1,4 +1,4 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.dao;
+package com.isaacmaffeis.firststepswithspringboot.database.dao;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

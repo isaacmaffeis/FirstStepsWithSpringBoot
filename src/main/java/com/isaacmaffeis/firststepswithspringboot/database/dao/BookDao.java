@@ -1,6 +1,6 @@
-package com.isaacmaffeis.firststepswithspringboot.repository.dao;
+package com.isaacmaffeis.firststepswithspringboot.database.dao;
 
-import com.isaacmaffeis.firststepswithspringboot.repository.dao.domain.Book;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Book;
 
 import java.util.List;
 import java.util.Optional;
