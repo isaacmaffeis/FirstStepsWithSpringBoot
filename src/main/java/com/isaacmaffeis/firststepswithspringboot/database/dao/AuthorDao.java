@@ -1,19 +1,19 @@
 package com.isaacmaffeis.firststepswithspringboot.database.dao;
 
-import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Author;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Author_A;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface AuthorDao {
 
-    void create(Author author);
+    void create(Author_A authorA);
 
-    Optional<Author> findOne(long l);
+    Optional<Author_A> findOne(long l);
 
-    List<Author> find();
+    List<Author_A> find();
 
-    void update(long id, Author author);
+    void update(long id, Author_A authorA);
 
     void delete(long id);
 

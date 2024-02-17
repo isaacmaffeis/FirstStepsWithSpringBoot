@@ -1,7 +1,7 @@
 package com.isaacmaffeis.firststepswithspringboot.database.dao.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Author;
-import com.isaacmaffeis.firststepswithspringboot.database.dao.TestDataUtil;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Author_A;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.TestDataUtil_A;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
@@ -14,7 +14,7 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
-public class AuthorDaoImplTests {
+public class AuthorADaoImplTests {
 
     @Mock
     private JdbcTemplate jdbcTemplate;
@@ -24,9 +24,9 @@ public class AuthorDaoImplTests {
 
     @Test
     public void testThatCreateAuthorGeneratesCorrectSql() {
-        Author author = TestDataUtil.createTestAuthorA();
+        Author_A authorA = TestDataUtil_A.createTestAuthorA();
 
-        underTest.create(author);
+        underTest.create(authorA);
 
         verify(jdbcTemplate).update(
                 eq("INSERT INTO authors (id, name, age) VALUES (?, ?, ?)"),
@@ -55,8 +55,8 @@ public class AuthorDaoImplTests {
 
     @Test
     public void testThatUpdateGeneratesCorrectSql() {
-        Author author = TestDataUtil.createTestAuthorA();
-        underTest.update(3L, author);
+        Author_A authorA = TestDataUtil_A.createTestAuthorA();
+        underTest.update(3L, authorA);
 
         verify(jdbcTemplate).update(
                 "UPDATE authors SET id = ?, name = ?, age = ? WHERE id = ?",

@@ -1,6 +1,6 @@
 package com.isaacmaffeis.firststepswithspringboot.database.dao.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Book;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Book_A;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -12,7 +12,7 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
-public class BookDaoImplTests {
+public class BookADaoImplTests {
 
     @Mock
     private JdbcTemplate jdbcTemplate;
@@ -22,13 +22,13 @@ public class BookDaoImplTests {
 
     @Test
     public void testThatCreateBookGeneratesCorrectSql() {
-        Book book = Book.builder()
+        Book_A bookA = Book_A.builder()
                 .isbn("978-1-2345-6789-0")
                 .title("The Shadow in the Attic")
                 .authorId(1L)
                 .build();
 
-        underTest.create(book);
+        underTest.create(bookA);
 
         verify(jdbcTemplate).update(
                 eq("INSERT INTO books (isbn, title, author_id) VALUES (?, ?, ?)"),

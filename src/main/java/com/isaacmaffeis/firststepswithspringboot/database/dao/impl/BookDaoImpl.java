@@ -1,6 +1,6 @@
 package com.isaacmaffeis.firststepswithspringboot.database.dao.impl;
 
-import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Book;
+import com.isaacmaffeis.firststepswithspringboot.database.dao.domain.Book_A;
 import com.isaacmaffeis.firststepswithspringboot.database.dao.BookDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -24,18 +24,18 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public void create(Book book) {
+    public void create(Book_A bookA) {
         jdbcTemplate.update(
                 "INSERT INTO books (isbn, title, author_id) VALUES (?, ?, ?)",
-                book.getIsbn(),
-                book.getTitle(),
-                book.getAuthorId()
+                bookA.getIsbn(),
+                bookA.getTitle(),
+                bookA.getAuthorId()
         );
     }
 
     @Override
-    public Optional<Book> findOne(String isbn) {
-        List<Book> results = jdbcTemplate.query(
+    public Optional<Book_A> findOne(String isbn) {
+        List<Book_A> results = jdbcTemplate.query(
                 "SELECT isbn, title, author_id from books WHERE isbn = ? LIMIT 1",
                 new BookRowMapper(),
                 isbn
@@ -43,11 +43,11 @@ public class BookDaoImpl implements BookDao {
         return results.stream().findFirst();
     }
 
-    public static class BookRowMapper implements RowMapper<Book> {
+    public static class BookRowMapper implements RowMapper<Book_A> {
 
         @Override
-        public Book mapRow(ResultSet rs, int rowNum) throws SQLException {
-            return Book.builder()
+        public Book_A mapRow(ResultSet rs, int rowNum) throws SQLException {
+            return Book_A.builder()
                     .isbn(rs.getString("isbn"))
                     .title(rs.getString("title"))
                     .authorId(rs.getLong("author_id"))
@@ -57,7 +57,7 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public List<Book> find() {
+    public List<Book_A> find() {
         return jdbcTemplate.query(
                 "SELECT isbn, title, author_id from books",
                 new BookRowMapper()
@@ -65,10 +65,10 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public void update(String isbn, Book book) {
+    public void update(String isbn, Book_A bookA) {
         jdbcTemplate.update(
                 "UPDATE books SET isbn = ?, title = ?, author_id = ? WHERE isbn = ?",
-                book.getIsbn(), book.getTitle(), book.getAuthorId(), isbn
+                bookA.getIsbn(), bookA.getTitle(), bookA.getAuthorId(), isbn
         );
     }
 
