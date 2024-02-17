@@ -1,0 +1,27 @@
+#Example of the application.properties
+
+#pizza.sauce=bbq
+pizza.topping=chicken
+pizza.crust=stuffed
+
+#H2
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=sa
+#spring.datasource.password=password
+
+#PostSQL
+#spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+#spring.datasource.username=postgres
+#spring.datasource.password=changemeinprod!
+#spring.datasource.driver-class-name=org.postgresql.Driver
+
+#spring.sql.init.mode=always
+
+# JPA
+spring.jpa.hibernate.ddl-auto = update
+
+spring.datasource.driver-class-name = org.postgresql.Driver
+spring.datasource.url = "jdbc:postgresql://localhost:5432/postgres"
+spring.datasource.username = "postgres"
+spring.datasource.password = "example"
