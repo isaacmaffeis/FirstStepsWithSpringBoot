@@ -1,6 +1,6 @@
 package com.isaacmaffeis.firststepswithspringboot.app.repositories;
 
-import com.isaacmaffeis.firststepswithspringboot.TestDataUtil;
+import com.isaacmaffeis.firststepswithspringboot.app.TestDataUtil;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.entities.AuthorEntity;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.entities.BookEntity;
 import org.junit.jupiter.api.Test;

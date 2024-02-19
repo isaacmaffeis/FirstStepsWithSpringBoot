@@ -1,4 +1,4 @@
-package com.isaacmaffeis.firststepswithspringboot;
+package com.isaacmaffeis.firststepswithspringboot.app;
 
 import com.isaacmaffeis.firststepswithspringboot.app.domain.dto.AuthorDto;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.dto.BookDto;

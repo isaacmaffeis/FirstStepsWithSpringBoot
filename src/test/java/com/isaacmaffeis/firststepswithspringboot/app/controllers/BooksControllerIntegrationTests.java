@@ -1,13 +1,12 @@
 package com.isaacmaffeis.firststepswithspringboot.app.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.isaacmaffeis.firststepswithspringboot.TestDataUtil;
+import com.isaacmaffeis.firststepswithspringboot.app.TestDataUtil;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.dto.BookDto;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.entities.BookEntity;
 import com.isaacmaffeis.firststepswithspringboot.app.services.BookService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;

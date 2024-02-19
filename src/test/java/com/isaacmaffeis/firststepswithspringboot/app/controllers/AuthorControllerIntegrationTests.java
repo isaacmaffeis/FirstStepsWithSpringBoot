@@ -1,8 +1,7 @@
 package com.isaacmaffeis.firststepswithspringboot.app.controllers;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.isaacmaffeis.firststepswithspringboot.TestDataUtil;
+import com.isaacmaffeis.firststepswithspringboot.app.TestDataUtil;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.dto.AuthorDto;
 import com.isaacmaffeis.firststepswithspringboot.app.domain.entities.AuthorEntity;
 import com.isaacmaffeis.firststepswithspringboot.app.services.AuthorService;
